@@ -71,9 +71,9 @@ from sentence_transformers import SentenceTransformer
 import re
 
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-DB_JSON     = "db_segments_zsst.json"
-IDX_OUT     = "log_formal/comment_db_zsst.index"
-TXT_OUT     = "log_formal/comment_texts_zsst.json"
+DB_JSON     = "db_segments.json"
+IDX_OUT     = "log_formal/comment_db.index"
+TXT_OUT     = "log_formal/comment_texts.json"
 
 data = db_segments
 texts = [c["text"] for c in data]
