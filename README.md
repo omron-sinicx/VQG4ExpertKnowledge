@@ -23,7 +23,7 @@ EgoExoAsk QA pairs are provided in the `annotations` directory. To construct the
 python src/video_clips.py
 python src/split.py
 ``` 
-This will create a `qa_val_samples_video_w_desc_eval.json` file under the `annotations` directory.
+This will create a `qa_val_samples_video_w_desc_eval.json` file under the `annotations` directory. This file contains the clips and the corresponding GT comments.
 
 *Note: `src/split.py` will also create the database split `qa_val_samples_video_w_desc_db.json` and the FAISS index file for the RAG method in our original paper. You can ignore these files.*
 
