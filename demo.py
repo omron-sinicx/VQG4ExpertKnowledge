@@ -1,4 +1,8 @@
-""
+"""
+A demo code for VQG using QwenVL-2.5, deployed by vLLM.
+If you are going to generate questions with EgoExo4D narrations, use prompt_withNarration instead of prompt_Qe.
+If you are going to generate questions based on ego video, modify the video_path variable.
+"""
 
 import base64
 import numpy as np
