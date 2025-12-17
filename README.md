@@ -17,13 +17,13 @@ pip install -r requirements.txt
 
 EgoExoAsk QA pairs are provided in the `annotations` directory. To construct the EgoExoAsk benchmark used in our paper with the original EgoExo4D dataset, the following preprocess is required. 
 
-1. Download the EgoExo4D dataset following the official document from here https://docs.ego-exo4d-data.org/ . Ensuring the `atomic_descriptions_train/val.json` and `proficiency_demonstration_train/val.json` are downloaded.
-2. Run the following commands.
+0. Download the EgoExo4D dataset following the official document from here https://docs.ego-exo4d-data.org/ . Ensuring the `atomic_descriptions_train/val.json` and `proficiency_demonstration_train/val.json` are downloaded.
+1. Run the following commands.
 ```
 python src/video_clips.py
 python src/split.py
 ``` 
-This will create a `qa_val_samples_video_w_desc_eval.json` file under the `annotations` directory.
+This will create a `qa_val_samples_video_w_desc_eval.json` file under the `annotations` directory and a `clips` directory containing the video clips used for VQG. 
 
 *Note: `src/split.py` will also create the database split `qa_val_samples_video_w_desc_db.json` and the FAISS index file for the RAG method in our original paper. You can ignore these files.*
 
@@ -71,3 +71,9 @@ python src/evaluate_retrieval.py \
   --recall_ks 1 5 10 \
   --topk_dump 5
 ```
+
+## VQG demo
+We provide an example of VQG using QwenVL-2.5 (https://github.com/QwenLM/Qwen3-VL) as the VLM.
+0. Note that you should install `qwen-vl-utils` toolkit, following the QwenVL official instructions, for this demo.
+1. The demo script requires using the vLLM to deploy VLM model. In our experiment, we deploy the QwenVL-2.5 7B model on a single A100 GPU. Please follow the original QwenVL instructions to deploy the model.
+2. Run the demo with `python demo.py`. Ensure that you correctly preprocess the EgoExo4D and the EgoExoAsk with the above scripts.
