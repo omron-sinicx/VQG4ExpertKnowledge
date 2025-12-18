@@ -4,7 +4,7 @@ Official implementation of our paper "Evaluating the Capability of Video Questio
 ## TODO
 - [x] Release the EgoExoAsk QA pairs
 - [x] Release the EgoExoAsk benchmark preprocess code and the evaluation code
-- [ ] Publish the VQG demo code
+- [x] Publish the VQG demo code
 
 
 ## Requirements
