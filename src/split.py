@@ -29,7 +29,7 @@ def stratified_split(data, db_ratio=0.5, seed=42):
 
 #------------------
 
-raw = json.load(open("../annotations/qa_val_samples_video_w_desc_test.json"))   # raw data
+raw = json.load(open("annotations/qa_val_samples_video_w_desc_test.json"))   # raw data
 cleaned_annotations = []
 for ann in raw:
     ann['annotations'] = [
