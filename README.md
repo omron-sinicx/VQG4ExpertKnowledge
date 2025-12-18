@@ -8,7 +8,7 @@ Official implementation of our paper "Evaluating the Capability of Video Questio
 
 
 ## Requirements
-We recommend to use a anaconda or docker environment.
+We recommend to use a anaconda or docker environment with `python==3.11`.
 ```
 pip install -r requirements.txt
 ```
