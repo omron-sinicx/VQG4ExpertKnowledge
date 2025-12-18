@@ -74,10 +74,11 @@ python src/evaluate_retrieval.py \
 
 ## VQG demo
 We provide an example of VQG using QwenVL-2.5 (https://github.com/QwenLM/Qwen3-VL) as the VLM.
+
 0. Note that you should install `qwen-vl-utils` toolkit, following the Qwen official instructions, for this demo.
 1. The demo script requires using the vLLM to deploy VLM model. In our experiment, we deploy the QwenVL-2.5 7B model on a single A100 GPU. Please follow the original QwenVL instructions to deploy the model.
 2. Run the demo with `python demo.py`. Ensure that you correctly preprocess the EgoExo4D and the EgoExoAsk with the above scripts.
-3. 
+
 ## Citation
 If you found this repository helpful, please considering citing:
 ```
