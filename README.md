@@ -80,7 +80,7 @@ We provide an example of VQG using QwenVL-2.5 (https://github.com/QwenLM/Qwen3-V
 2. Run the demo with `python demo.py`. Ensure that you correctly preprocess the EgoExo4D and the EgoExoAsk with the above scripts.
 
 ## Citation
-If you found this repository helpful, please considering citing:
+If you found this repository helpful, please consider citing:
 ```
 @article{zhang2025evaluating,
   title={Evaluating the Capability of Video Question Generation for Expert Knowledge Elicitation},
