@@ -1,6 +1,6 @@
 # VQG4ExpertKnowledge
 Official implementation of our paper "Evaluating the Capability of Video Question Generation for Expert-Knowledge Elicitation".
-[![arXiv](http://arXiv.org/icons/hand.gif)](https://arxiv.org/abs/2512.15006)
+[![arXiv](https://img.shields.io/badge/arXiv-2512.15006-b31b1b.svg)](https://arxiv.org/abs/2512.15006)
 
 ## TODO
 - [x] Release the EgoExoAsk QA pairs
